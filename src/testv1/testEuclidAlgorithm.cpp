@@ -4,17 +4,17 @@
 
 using namespace std;
 
-TEST(EuclidAlgorithm, t1)
+TEST(EuclidAlgorithm, t_2_2)
 {
     ASSERT_EQ(2, EuclidAlgorithm(2, 2));
 }
 
-TEST(EuclidAlgorithm, t2)
+TEST(EuclidAlgorithm, t_2_10)
 {
     ASSERT_EQ(1, EuclidAlgorithm(3, 10));
 }
 
-TEST(EuclidAlgorithm, t3)
+TEST(EuclidAlgorithm, t_10_5)
 {
     ASSERT_EQ(5, EuclidAlgorithm(10, 5));
 }
@@ -22,6 +22,6 @@ TEST(EuclidAlgorithm, t3)
 int main(int argc, char **argv)
 {
     testing::InitGoogleTest(&argc, argv);
-    RUN_ALL_TESTS();
-    return 0;
+
+    return RUN_ALL_TESTS();
 }
