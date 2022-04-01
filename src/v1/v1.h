@@ -2,23 +2,14 @@
 #define v1_H
 
 #include <base.h>
+
 // 欧几里得算法
-
-template <typename T>
-void exchange(T &m, T &n)
-{
-    T tmp;
-    tmp = m;
-    m = n;
-    n = tmp;
-}
-
 template <typename T>
 T EuclidAlgorithm(T m, T n)
 {
 
     if (m < n)
-        exchange(m, n);
+        exchange<T>(m, n);
 
     T r = n;
 
